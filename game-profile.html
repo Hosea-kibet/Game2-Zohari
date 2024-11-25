@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Profile</title>
+    <link rel="stylesheet" href="css/game-profile.css">
+</head>
+<body>
+    <header>
+        <h1 id="game-title">Game Profile</h1>
+    </header>
+
+    <main class="game-profile">
+        <section class="game-banner">
+            <img src="assets/images/banner-image.svg" alt="Game Banner" class="banner-image">
+            <div class="play-icon" onclick="playGame()">▶</div>
+        </section>
+
+        <section class="game-description">
+            <h2 class="game-name" id="game-name">Game Title</h2>
+            <p id="game-description">
+                This is a placeholder description of the game. The description provides details about the storyline, objectives, gameplay mechanics, and unique features of the game.
+            </p>
+        </section>
+    </main>
+
+    <div class="desktop-message">
+        <section class="error-container">
+            <span>4</span>
+            <span><span class="screen-reader-text">0</span></span>
+            <span>4</span>
+        </section>
+        <div class="link-container">
+            <a class="more-link">Use a mobile device or tablet for better experience</a>
+        </div>
+    </div>
+
+    <div id="game-iframe-container" class="iframe-container" style="display:none;">
+        <iframe id="game-iframe" src="" width="100%" height="600px" style="border:none;"></iframe>
+    </div>
+
+    <script src="js/game-profile.js"></script>
+</body>
+</html>
