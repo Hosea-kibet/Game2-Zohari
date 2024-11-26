@@ -92,7 +92,7 @@ body, html {
 
     main {
       position: absolute;
-      top: 60px; /* Matches header height */
+      top: 120px; /* Matches header height */
       bottom: 60px; /* Matches footer height */
       left: 0;
       right: 0;
