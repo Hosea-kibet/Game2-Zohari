@@ -100,54 +100,7 @@ body, html {
       padding: 10px; /* Optional padding */
       box-sizing: border-box;
   }
-    .category-header-top {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0 10px;
-      background-color: #121213;
-      color: white;
-      padding: 5px;
-      margin-top: 20px;
-      border: none;
-      width: 100%;
-      cursor: pointer;
-      font-weight: bold;
-      border-radius: 5px;
-      font-size: 14px;
-   }
-    .banner-game{
-        border-radius: 10px;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .banner img {
-        width: 100%;
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-
    
-    .category-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 20px 0 10px;
-        background-color: #245C9C;
-        color: white;
-        padding: 5px;
-        margin-top: 20px;
-        border: none;
-        width: 100%;
-        cursor: pointer;
-        font-weight: bold;
-        border-radius: 5px;
-        font-size: 14px;
-    }
-    .see-all {
-        color: #fff;
-        text-decoration: none;
-    }
 
     .games {
       display: flex;
@@ -238,25 +191,51 @@ body, html {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Define footer height */
+  height: 70px;
   background-color: #fff;
   z-index: 1000;
 }
 
 .footer-item {
   text-align: center;
+  flex: 1;  /* Make items evenly spaced */
+  cursor: pointer;
 }
 
 .footer-item img {
-  height: 20px;
+  height: 25px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
 }
+
+.footer-item.active img {
+  transform : scale(1.2);
+}
+
 
 .footer-item p {
   font-size: 12px;
-  margin-top: 5px;
+  color: #777;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.footer-item.active p {
+  color: #000;
+}
+
+.footer-item:hover img {
+  transform: scale(1.1);
+}
+
+.footer-item:hover {
+  color: #333;
 }
 
 
