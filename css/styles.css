@@ -142,8 +142,17 @@ main {
 
 .featured-game-content {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 15px;
+}
+.game-minions  h3{
+  margin: 0;
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000000;
 }
 
 .game-icon {
@@ -152,27 +161,16 @@ main {
   border-radius: 10px;
 }
 
-.game-details {
-  flex: 1;
-}
 
-.game-details h3 {
-  margin: 0;
-  font-size: 1.2em;
-}
-
-.game-details p {
-  margin: 5px 0 0;
-  color: #888;
-}
 
 .play-button {
-  background-color: #f90;
+  margin-left: auto; /* Push the button to the far right */
+  background-color: #1C599C;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 15px;
   font-weight: bold;
 }
 
@@ -211,11 +209,74 @@ main {
 .details h3 {
   margin: 0;
   font-size: 1em;
+  white-space: nowrap;
+  color: #000000;
+
 }
 
 .details p {
   margin: 5px 0 0;
   color: #888;
+}
+
+
+/* Games Section */
+.games {
+  margin-bottom: 20px;
+}
+
+.category-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.games h2 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color:#000000;
+}
+
+/* Grid layout for games */
+.games-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.game-card {
+  background-color: #fff;
+  border-radius: 8px;
+  width: calc(33.33% - 10px); /* Adjust width for 3 items per row */
+  box-sizing: border-box;
+  text-align: center;
+ 
+
+}
+
+.game-card img {
+  width: 100%; /* Full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Round the top corners */
+  display: block; /* Ensure it behaves like a block-level element */
+  overflow: hidden; /* Ensure the image respects the border-radius */
+}
+
+
+.game-card .game-details h3 {
+  margin: 0;
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000000;
+}
+
+.game-card .game-details p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 0.9em; 
+
 }
 
 

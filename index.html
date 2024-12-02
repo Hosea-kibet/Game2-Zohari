@@ -2,105 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zohari Game Center</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zohari Game Center</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="mobile-only">
-        <header>
-            <div class="header-content">
-                <img src="assets/images/logo.svg" alt="Zohari Logo" class="logo">
-                <img src="assets/images/avatar.svg" alt="User Avatar" class="avatar">
-            </div>
-            <nav class="nav-bar">
-                <ul>
-                    <li class="nav-item active"><a href="#">For You</a></li>
-                    <li class="nav-item"><a href="#">Top Charts</a></li>
-                    <li class="nav-item"><a href="#">Kids</a></li>
-                    <li class="nav-item"><a href="#">Categories</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <!-- Banner Section -->
-            <section class="banner">
-              <div class="banner-content">
-                <img src="assets/images/game1.svg" alt="Minions Game" class="banner-image" />
-                <div class="banner-text">
+  <div class="mobile-only">
+    <header>
+      <div class="header-content">
+        <img src="assets/images/logo.svg" alt="Zohari Logo" class="logo">
+        <img src="assets/images/avatar.svg" alt="User Avatar" class="avatar">
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li class="nav-item active"><a href="#">For You</a></li>
+          <li class="nav-item"><a href="#">Top Charts</a></li>
+          <li class="nav-item"><a href="#">Kids</a></li>
+          <li class="nav-item"><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="banner-content">
+          <img src="assets/images/Minion.png" alt="Minions Game" class="banner-image" />
+          <!-- <div class="banner-text">
                   <h2>Play this new game for the minions</h2>
-                </div>
-              </div>
-            </section>
-          
-            <!-- Minions Game Section -->
-            <section class="featured-game">
-              <div class="featured-game-content">
-                <img src="assets/images/game1.svg" alt="Minions Game Icon" class="game-icon" />
-                <div class="game-details">
-                  <h3>Minions</h3>
-                  <p>Minions.inc <span>4.5 ★</span></p>
-                </div>
-                <button class="play-button" onclick="viewGameProfile('Minions')">Play</button>
-              </div>
-            </section>
-          
-            <!-- Suggested Section -->
-            <section class="suggested">
-              <h2>Sponsored | Suggested for you</h2>
-              <div class="suggested-items">
-                <div class="suggested-item">
-                  <img src="assets/images/game1.svg" alt="Booking.com">
-                    <h3>Booking.com: Hotels and more</h3>
-                    <p>4.5 ★ | 49MB</p>
-                  </div>
-                </div>
-                <div class="suggested-item">
-                  <img src="assets/images/game1.svg" alt="Booking.com">
-                  <div class="details">
-                    <h3>Booking.com: Hotels and more</h3>
-                    <p>4.5 ★ | 49MB</p>
-                  </div>
-                </div>
-                <div class="suggested-item">
-                  <img src="assets/images/game1.svg" alt="Booking.com">
-                  <div class="details">
-                    <h3>Booking.com: Hotels and more</h3>
-                    <p>4.5 ★ | 49MB</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </main>
-          
-        <footer class="footer">
-            <div class="footer-item">
-              <img src="assets/images/search-icon.png" alt="Search Icon">
-              <p>Search</p>
-            </div>
-            <div class="footer-item active">
-              <img src="assets/images/tournaments-icon.png" alt="Tournaments Icon">
-              <p>Tournaments</p>
-            </div>
-            <div class="footer-item">
-              <img src="assets/images/settings-icon.png" alt="Settings Icon">
-              <p>Settings</p>
-            </div>
-          </footer>          
-    </div>
-    <div class="desktop-message">
-        <section class="error-container">
-            <span>4</span>
-            <span><span class="screen-reader-text">0</span></span>
-            <span>4</span>
-        </section>
-        <div class="link-container">
-            <a class="more-link">Use a mobile device or tablet for better experience</a>
+                </div> -->
         </div>
+      </section>
+
+      <section class="featured-game">
+        <div class="featured-game-content">
+          <img src="assets/images/game1.svg" alt="Minions Game Icon" class="game-icon" />
+          <div class="game-minions">
+            <h3>Minions</h3>
+            <p>Minions.inc 4.5 <span style="color: #F58426;">★</span></p>
+          </div>
+        </div>
+        <button class="play-button" onclick="viewGameProfile('Minions')">Play</button>
+      </section>
+
+      <section class="suggested">
+        <h2>Sponsored | Suggested for you</h2>
+        <div class="suggested-items">
+          <div class="suggested-item">
+            <img src="assets/images/game1.svg" alt="Booking.com">
+            <div class="details">
+              <h3>Booking.com: Hotels and more</h3>
+              <p>4.5 <span style="color: #F58426;">★</span> | 49MB</p>
+            </div>
+          </div>
+          <div class="suggested-item">
+            <img src="assets/images/game1.svg" alt="Booking.com">
+            <div class="details">
+              <h3>Booking.com: Hotels and more</h3>
+              <p>4.5 <span style="color: #F58426;">★</span> | 49MB</p>
+            </div>
+          </div>
+          <div class="suggested-item">
+            <img src="assets/images/game1.svg" alt="Booking.com">
+            <div class="details">
+              <h3>Booking.com: Hotels and more</h3>
+              <p>4.5 <span style="color: #F58426;">★</span> | 49MB</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="games">
+        <div class="category-title">
+          <h2>Recommended for you</h2>
+          <img src="assets/images/back.png" alt="Search Icon">
+        </div>
+        <div class="games-grid">
+          <div class="game-card">
+            <img src="assets/images/game1.svg" alt="Boomplay" class="game-icon">
+            <div class="game-details">
+              <h3>Boomplay</h3>
+              <p>Download Music 4.5 <span style="color: #F58426;">★</span></p>
+            </div>
+          </div>
+          <div class="game-card">
+            <img src="assets/images/game2.svg" alt="Pilates" class="game-icon">
+            <div class="game-details">
+              <h3>Boomplay</h3>
+              <p>Download Music 4.5 <span style="color: #F58426;">★</span></p>
+            </div>
+          </div>
+          <div class="game-card">
+            <img src="assets/images/game3.svg" alt="WPS" class="game-icon">
+            <div class="game-details">
+              <h3>WPS</h3>
+              <p>Office-PDF-Word 4.5 <span style="color: #F58426;">★</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="games">
+        <div class="category-title">
+          <h2>Category 1</h2>
+          <img src="assets/images/back.png" alt="Search Icon">
+        </div>
+        <div class="games-grid">
+          <div class="game-card">
+            <img src="assets/images/game1.svg" alt="Boomplay" class="game-icon">
+            <div class="game-details">
+              <h3>Boomplay</h3>
+              <p>Download Music 4.5 <span style="color: #F58426;">★</span></p>
+            </div>
+          </div>
+          <div class="game-card">
+            <img src="assets/images/game2.svg" alt="Pilates" class="game-icon">
+            <div class="game-details">
+              <h3>Boomplay</h3>
+              <p>Download Music 4.5 <span style="color: #F58426;">★</span></p>
+            </div>
+          </div>
+          <div class="game-card">
+            <img src="assets/images/game3.svg" alt="WPS" class="game-icon">
+            <div class="game-details">
+              <h3>WPS</h3>
+              <p>Office-PDF-Word 4.5 <span style="color: #F58426;">★</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-item">
+        <img src="assets/images/search-icon.png" alt="Search Icon">
+        <p>Search</p>
+      </div>
+      <div class="footer-item active">
+        <img src="assets/images/tournaments-icon.png" alt="Tournaments Icon">
+        <p>Tournaments</p>
+      </div>
+      <div class="footer-item">
+        <img src="assets/images/settings-icon.png" alt="Settings Icon">
+        <p>Settings</p>
+      </div>
+    </footer>
+  </div>
+  <div class="desktop-message">
+    <section class="error-container">
+      <span>4</span>
+      <span><span class="screen-reader-text">0</span></span>
+      <span>4</span>
+    </section>
+    <div class="link-container">
+      <a class="more-link">Use a mobile device or tablet for better experience</a>
     </div>
-    <script src="js/script.js"></script>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
