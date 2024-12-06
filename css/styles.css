@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 14px;
 }
 
 body, html {
@@ -58,7 +60,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    /* border-bottom: 1px solid #ccc; */
+    border-bottom: 1px solid #ccc;
     padding: 10px 0;
   }
 
@@ -75,7 +77,7 @@ body, html {
   .nav-item {
     font-size: 14px;
     font-weight: bold;
-    color:#000000;
+    color:#3d3b3b;
   }
 
   .nav-item a {
@@ -88,6 +90,8 @@ body, html {
     border-bottom: 3px solid #1C599C; /* Highlight for active tab */
     color: #1C599C; /* Color for active tab */
 }
+
+
 
 
 /* Main Container */
@@ -135,7 +139,6 @@ main {
   gap: 15px;
   padding: 15px;
   background-color: #fff;
-  border: 1px solid #ddd;
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -152,7 +155,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #000000;
+  color: #3d3b3b;
 }
 
 .game-icon {
@@ -167,7 +170,7 @@ main {
   margin-left: auto; /* Push the button to the far right */
   background-color: #1C599C;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 35px;
   border: none;
   cursor: pointer;
   border-radius: 15px;
@@ -179,9 +182,19 @@ main {
   margin-bottom: 20px;
 }
 
-.suggested h2 {
+.header {
+  display: flex;
   margin-bottom: 10px;
+  align-items: center;
+  
+}
+
+.suggested-header {
+  margin-left: 5px;
   font-size: 1.2em;
+  white-space: nowrap;
+  color: #1d1c1c;
+  font-weight: 100;
 }
 
 .suggested-items {
@@ -196,7 +209,6 @@ main {
   gap: 15px;
   padding: 10px;
   background-color: #fff;
-  border: 1px solid #ddd;
   border-radius: 8px;
 }
 
@@ -210,7 +222,7 @@ main {
   margin: 0;
   font-size: 1em;
   white-space: nowrap;
-  color: #000000;
+  color: #3d3b3b;
 
 }
 
@@ -233,7 +245,7 @@ main {
 .games h2 {
   margin-bottom: 10px;
   font-size: 1.2em;
-  color:#000000;
+  color:#3d3b3b;
 }
 
 /* Grid layout for games */
@@ -269,7 +281,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #000000;
+  color: #3d3b3b;
 }
 
 .game-card .game-details p {
