@@ -56,39 +56,55 @@ body, html {
         border-radius: 50%;
     }
 
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-  }
+ .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
 
-  .nav-bar ul {
-    display: flex;
-    list-style-type: none;
-    margin:0;
-    padding:0;
-    width: 100%;
-    justify-content: space-evenly;
-  }
+.nav-bar ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
 
+.nav-item {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3d3b3b;
+  position: relative;
+}
 
-  .nav-item {
-    font-size: 14px;
-    font-weight: bold;
-    color:#3d3b3b;
-  }
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
 
-  .nav-item a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-  }
+.nav-item.active a {
+  color: #1C599C;
+  border-bottom: 3px solid #1C599C;  
+  width: auto; 
+  padding-bottom: 8px;  
+}
 
-  .nav-item.active a {
-    border-bottom: 3px solid #1C599C; /* Highlight for active tab */
-    color: #1C599C; /* Color for active tab */
+.nav-item.active {
+  position: relative;
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; 
+  left: 10%; 
+  width: 80%; 
+  height: 3px;
+  padding: 5px;
 }
 
 
